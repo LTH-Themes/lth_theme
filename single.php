@@ -19,25 +19,11 @@ $sidebar = $blog['sidebar']; ?>
                     <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
                         <div class="sidebars">
                             <!-- Sidebar -->
-                            <aside class="lth-sidebars">
-                                <?php $sidebar_2 = $blog['sidebar_2'];
-                                if ($sidebar_2) {
-                                    $args = [
-                                        'post_type' => 'html-blocks',
-                                        'p' => $sidebar_2,
-                                    ];
-                                    $lth = new WP_Query($args);
-                                    if ($lth->have_posts()) { ?>
-                                            <?php while ($lth->have_posts()) {
-                                                $lth-> the_post();
-                                                //load file tương ứng với post format
-                                               the_content();
-                                            } 
-                                    }
-                                    // reset post data
-                                    wp_reset_postdata();
-                                } ?>
-                            </aside>
+							<?php if (is_active_sidebar('sidebar_single_blog')) { ?>
+                                <aside class="lth-sidebars">
+                                    <?php dynamic_sidebar('sidebar_single_blog'); ?>
+                                </aside>
+                            <?php } ?>
                         </div>
                     </div>
                 <?php } ?>
@@ -67,25 +53,11 @@ $sidebar = $blog['sidebar']; ?>
                     <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
                         <div class="sidebars">
                             <!-- Sidebar -->
-                            <aside class="lth-sidebars">
-                                <?php $sidebar_2 = $blog['sidebar_2'];
-                                if ($sidebar_2) {
-                                    $args = [
-                                        'post_type' => 'html-blocks',
-                                        'p' => $sidebar_2,
-                                    ];
-                                    $lth = new WP_Query($args);
-                                    if ($lth->have_posts()) { ?>
-                                            <?php while ($lth->have_posts()) {
-                                                $lth-> the_post();
-                                                //load file tương ứng với post format
-                                               the_content();
-                                            } 
-                                    }
-                                    // reset post data
-                                    wp_reset_postdata();
-                                } ?>
-                            </aside>
+                            <?php if (is_active_sidebar('sidebar_single_blog')) { ?>
+                                <aside class="lth-sidebars">
+                                    <?php dynamic_sidebar('sidebar_single_blog'); ?>
+                                </aside>
+                            <?php } ?>
                         </div>
                     </div>
                 <?php } ?>

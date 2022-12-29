@@ -16,7 +16,7 @@
 	    unregister_widget('WP_Widget_Recent_Comments');
 	    unregister_widget('WP_Widget_RSS');
 	    // unregister_widget('WP_Widget_Tag_Cloud');
-	    unregister_widget('WP_Nav_Menu_Widget');
+	    // unregister_widget('WP_Nav_Menu_Widget');
 	    unregister_widget('Twenty_Eleven_Ephemera_Widget');
 		unregister_widget('WP_Widget_Media_Audio');
 		unregister_widget('WP_Widget_Media_Video');

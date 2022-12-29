@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The Template for displaying all single products
  *
@@ -15,14 +16,14 @@
  * @version     7.0.1
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
 }
 
-get_header( 'shop' );
+get_header('shop');
 
-$products = get_field('product_single_option','option');
-$sidebar = $products['sidebar'];  ?>
+$product = get_field('product_single_option', 'option');
+$sidebar = $product['sidebar'];  ?>
 
 <?php require_once(LIBS_DIR . '/breadcrumbs.php'); ?>
 
@@ -30,7 +31,7 @@ $sidebar = $products['sidebar'];  ?>
     <div class="main-container">
         <div class="main-content">
 
-            <section id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
+            <section id="product-<?php the_ID(); ?>" <?php wc_product_class('', $product); ?>>
                 <?php require_once(LIBS_DIR . '/breadcrumbs.php'); ?>
 
                 <div class="container">
@@ -52,35 +53,36 @@ $sidebar = $products['sidebar'];  ?>
 
                         <?php if ($sidebar == 'no') { ?>
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <?php } else { ?>
-                            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-                        <?php } ?>
+                            <?php } else { ?>
+                                <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                                <?php } ?>
 
-                            <?php while ( have_posts() ) : ?>
-                                <?php the_post(); ?>
+                                <?php while (have_posts()) : ?>
+                                    <?php the_post(); ?>
 
-                                <?php wc_get_template_part( 'content', 'single-product' ); ?>
+                                    <?php wc_get_template_part('content', 'single-product'); ?>
 
-                            <?php endwhile; // end of the loop. ?>
-                            
-                        </div>
+                                <?php endwhile; // end of the loop. 
+                                ?>
 
-                        <?php if ($sidebar == 'right') { ?>
-                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
-                                <div class="sidebars">
-                                    <!-- Sidebar -->
-                                    <?php if (is_active_sidebar('sidebar_single_product')) { ?>
-
-                                        <aside class="lth-sidebars">
-                                            <?php dynamic_sidebar('sidebar_single_product'); ?>
-                                        </aside>
-
-                                    <?php } ?>
                                 </div>
+
+                                <?php if ($sidebar == 'right') { ?>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
+                                        <div class="sidebars">
+                                            <!-- Sidebar -->
+                                            <?php if (is_active_sidebar('sidebar_single_product')) { ?>
+
+                                                <aside class="lth-sidebars">
+                                                    <?php dynamic_sidebar('sidebar_single_product'); ?>
+                                                </aside>
+
+                                            <?php } ?>
+                                        </div>
+                                    </div>
+                                <?php } ?>
                             </div>
-                        <?php } ?>
                     </div>
-                </div>
             </section>
 
         </div>
@@ -88,6 +90,6 @@ $sidebar = $products['sidebar'];  ?>
 </main>
 
 <?php
-get_footer( 'shop' );
+get_footer('shop');
 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */

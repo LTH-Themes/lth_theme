@@ -146,6 +146,68 @@ function lth_sidebar_register()
     //     dynamic_sidebar('sidebar_blog');
     // }   
 
+    $blogs = get_field('blogs', 'option');
+    $blogs_sidebar = $blogs['sidebar'];
+    if ($blogs_sidebar != 'no') {
+        register_sidebar(
+            array(
+                'name' => __('Blogs'),
+                'id'        => 'sidebar_blogs',
+                'before_widget' => '<div class="sidebar-box">',
+                'after_widget' => '</div>',
+                'before_title' => '<h3>',
+                'after_title' => '</h3>',
+            )
+        );
+    }
+    
+    $blog = get_field('blog_single','option');
+    $blog_sidebar = $blog['sidebar'];
+    if ($blog_sidebar != 'no') {
+        register_sidebar(
+            array(
+                'name' => __('Blog Single'),
+                'id'        => 'sidebar_single_blog',
+                'before_widget' => '<div class="sidebar-box">',
+                'after_widget' => '</div>',
+                'before_title' => '<h3>',
+                'after_title' => '</h3>',
+            )
+        );
+    }
+
+    if (class_exists('WooCommerce')) {
+        $products = get_field('products', 'option');
+        $products_sidebar = $products['sidebar'];
+        if ($products_sidebar != 'no') {
+            register_sidebar(
+                array(
+                    'name' => __('Products'),
+                    'id'        => 'sidebar_shop',
+                    'before_widget' => '<div class="sidebar-box sidebar-product">',
+                    'after_widget' => '</div>',
+                    'before_title' => '<h3>',
+                    'after_title' => '</h3>',
+                )
+            );
+        }
+
+        $product = get_field('product_single_option','option');
+        $product_sidebar = $product['sidebar'];
+        if ($product_sidebar != 'no') {
+            register_sidebar(
+                array(
+                    'name' => __('Product Single'),
+                    'id'        => 'sidebar_single_product',
+                    'before_widget' => '<div class="sidebar-box sidebar-product">',
+                    'after_widget' => '</div>',
+                    'before_title' => '<h3>',
+                    'after_title' => '</h3>',
+                )
+            );
+        }
+    }
+
     /////////////////////////////////////////
 
 }

@@ -281,36 +281,6 @@ if (class_exists('WooCommerce')) {
                             'placeholder' => '',
                         ),
                         array(
-                            'key' => 'field_6239a4aeaac27',
-                            'label' => '',
-                            'name' => 'sidebar_2',
-                            'type' => 'post_object',
-                            'instructions' => '',
-                            'required' => 0,
-                            'conditional_logic' => array(
-                                array(
-                                    array(
-                                        'field' => 'field_61e8ebad137b5',
-                                        'operator' => '!=',
-                                        'value' => 'no',
-                                    ),
-                                ),
-                            ),
-                            'wrapper' => array(
-                                'width' => '',
-                                'class' => '',
-                                'id' => '',
-                            ),
-                            'post_type' => array(
-                                0 => 'html-blocks',
-                            ),
-                            'taxonomy' => '',
-                            'allow_null' => 1,
-                            'multiple' => 0,
-                            'return_format' => 'id',
-                            'ui' => 1,
-                        ),
-                        array(
                             'key' => 'field_61e8ec070ccbb',
                             'label' => 'Products Per Page',
                             'name' => 'products_per_page',
@@ -423,36 +393,6 @@ if (class_exists('WooCommerce')) {
                             'return_format' => 'value',
                             'placeholder' => '',
                         ),
-                        array(
-                            'key' => 'field_6239a4eaaac28',
-                            'label' => '',
-                            'name' => 'sidebar_2',
-                            'type' => 'post_object',
-                            'instructions' => '',
-                            'required' => 0,
-                            'conditional_logic' => array(
-                                array(
-                                    array(
-                                        'field' => 'field_61e8ecabb490b',
-                                        'operator' => '!=',
-                                        'value' => 'no',
-                                    ),
-                                ),
-                            ),
-                            'wrapper' => array(
-                                'width' => '',
-                                'class' => '',
-                                'id' => '',
-                            ),
-                            'post_type' => array(
-                                0 => 'html-blocks',
-                            ),
-                            'taxonomy' => '',
-                            'allow_null' => 1,
-                            'multiple' => 0,
-                            'return_format' => 'id',
-                            'ui' => 1,
-                        ),
                     ),
                 ),
                 array(
@@ -536,36 +476,6 @@ if (class_exists('WooCommerce')) {
                             'return_format' => 'value',
                             'placeholder' => '',
                         ),
-                        array(
-                            'key' => 'field_6239a52eaac29',
-                            'label' => '',
-                            'name' => 'sidebar_2',
-                            'type' => 'post_object',
-                            'instructions' => '',
-                            'required' => 0,
-                            'conditional_logic' => array(
-                                array(
-                                    array(
-                                        'field' => 'field_61fa6608d22aa',
-                                        'operator' => '!=',
-                                        'value' => 'no',
-                                    ),
-                                ),
-                            ),
-                            'wrapper' => array(
-                                'width' => '',
-                                'class' => '',
-                                'id' => '',
-                            ),
-                            'post_type' => array(
-                                0 => 'html-blocks',
-                            ),
-                            'taxonomy' => '',
-                            'allow_null' => 1,
-                            'multiple' => 0,
-                            'return_format' => 'id',
-                            'ui' => 1,
-                        ),
                     ),
                 ),
                 array(
@@ -632,36 +542,6 @@ if (class_exists('WooCommerce')) {
                             'ajax' => 0,
                             'return_format' => 'value',
                             'placeholder' => '',
-                        ),
-                        array(
-                            'key' => 'field_6239a54caac2a',
-                            'label' => '',
-                            'name' => 'sidebar_2',
-                            'type' => 'post_object',
-                            'instructions' => '',
-                            'required' => 0,
-                            'conditional_logic' => array(
-                                array(
-                                    array(
-                                        'field' => 'field_61fa661fd22af',
-                                        'operator' => '!=',
-                                        'value' => 'no',
-                                    ),
-                                ),
-                            ),
-                            'wrapper' => array(
-                                'width' => '',
-                                'class' => '',
-                                'id' => '',
-                            ),
-                            'post_type' => array(
-                                0 => 'html-blocks',
-                            ),
-                            'taxonomy' => '',
-                            'allow_null' => 1,
-                            'multiple' => 0,
-                            'return_format' => 'id',
-                            'ui' => 1,
                         ),
                     ),
                 ),
@@ -1518,36 +1398,6 @@ if (class_exists('WooCommerce')) {
                             'return_format' => 'value',
                             'placeholder' => '',
                         ),
-                        array(
-                            'key' => 'field_6239a52eaac29',
-                            'label' => '',
-                            'name' => 'sidebar_2',
-                            'type' => 'post_object',
-                            'instructions' => '',
-                            'required' => 0,
-                            'conditional_logic' => array(
-                                array(
-                                    array(
-                                        'field' => 'field_61fa6608d22aa',
-                                        'operator' => '!=',
-                                        'value' => 'no',
-                                    ),
-                                ),
-                            ),
-                            'wrapper' => array(
-                                'width' => '',
-                                'class' => '',
-                                'id' => '',
-                            ),
-                            'post_type' => array(
-                                0 => 'html-blocks',
-                            ),
-                            'taxonomy' => '',
-                            'allow_null' => 1,
-                            'multiple' => 0,
-                            'return_format' => 'id',
-                            'ui' => 1,
-                        ),
                     ),
                 ),
                 array(
@@ -1614,36 +1464,6 @@ if (class_exists('WooCommerce')) {
                             'ajax' => 0,
                             'return_format' => 'value',
                             'placeholder' => '',
-                        ),
-                        array(
-                            'key' => 'field_6239a54caac2a',
-                            'label' => '',
-                            'name' => 'sidebar_2',
-                            'type' => 'post_object',
-                            'instructions' => '',
-                            'required' => 0,
-                            'conditional_logic' => array(
-                                array(
-                                    array(
-                                        'field' => 'field_61fa661fd22af',
-                                        'operator' => '!=',
-                                        'value' => 'no',
-                                    ),
-                                ),
-                            ),
-                            'wrapper' => array(
-                                'width' => '',
-                                'class' => '',
-                                'id' => '',
-                            ),
-                            'post_type' => array(
-                                0 => 'html-blocks',
-                            ),
-                            'taxonomy' => '',
-                            'allow_null' => 1,
-                            'multiple' => 0,
-                            'return_format' => 'id',
-                            'ui' => 1,
                         ),
                     ),
                 ),

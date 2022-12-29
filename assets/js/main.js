@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-    $('html, body').animate({ scrollTop: 0 }, 0);
+    // $('html, body').animate({ scrollTop: 0 }, 0);
 
     $(window).on("scroll", function () {
         var hb = $('.header').outerHeight();

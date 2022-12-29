@@ -59,13 +59,20 @@
 .wp-block-columns .block-editor-block-list__block {
   margin-top: 0;
 }
-.block-editor-block-list__block
-  .wp-block-column
-  .block-list-appender.block-list-appender {
+.block-editor-block-list__block .wp-block-column .block-list-appender.block-list-appender {
   bottom: 0;
 }
 .lzb-gutenberg-select select[multiple].components-select-control__input {
   height: 100px;
+}
+.wp-block-columns .block-editor-block-list__block > .lazyblock {
+  overflow: hidden;
+  min-width: 40px;
+  padding: 20px 10px;
+}
+.lazyblock .lzb-content-title > *:not(span) {
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 pre,

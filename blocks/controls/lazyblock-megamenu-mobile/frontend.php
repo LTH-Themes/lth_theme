@@ -22,7 +22,7 @@ if (!function_exists('lth_megamenu_mobile_output_fe')) :
 
         $nav_menu    = get_term_by('slug', $attributes['menu_name'], 'nav_menu');
 ?>
-        <article class="lth-megamenu megamenu-mobile <?php echo $attributes['class']; ?>  d-block d-lg-none">
+        <article class="lth-megamenu megamenu-mobile d-block d-lg-none <?php echo $attributes['class']; ?>">
             <div class="open-box">
                 <a href="#" title="">
                     <span></span>

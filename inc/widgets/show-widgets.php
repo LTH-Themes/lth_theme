@@ -33,9 +33,6 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require_once(LIBS_DIR . '/widgets/widget-cart.php');
 }
 
-// khởi tạo widgets content menu
-require_once(LIBS_DIR . '/widgets/widget-menu.php');
-
 require_once(LIBS_DIR . '/widgets/widget-html.php');
 
 require_once(LIBS_DIR . '/widgets/widget-socials.php');
