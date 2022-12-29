@@ -46,11 +46,11 @@ require_once(LIBS_DIR . '/BFI_Thumb/setting.php');
 require_once(LIBS_DIR . '/plugins/class-tgm-plugin-activation.php');
 require_once(LIBS_DIR . '/plugins/plugins.php');
 
-if ( class_exists( 'WooCommerce' ) ) {
+if (class_exists('WooCommerce')) {
 	// woocommerce
 	define('WOO_DIR', THEME_DIR . '/woocommerce');
-	
-    require_once(LIBS_DIR . '/woocommerce.php');
+
+	require_once(LIBS_DIR . '/woocommerce.php');
 }
 
 // Custom post types
